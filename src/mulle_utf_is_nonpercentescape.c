@@ -3,7 +3,9 @@
 //  mulle-utf
 //
 //  Created by Nat! on 24.04.16.
-//  Copyright © 2016 Mulle kybernetiK. All rights reserved.
+//  Copyright © 2016 Mulle kybernetiK.
+//  Copyright (c) 2016 Codeon GmbH.
+//  All rights reserved.
 //
 
 #include "mulle_utf_is_nonpercentescape.h"
