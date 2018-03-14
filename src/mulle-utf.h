@@ -39,20 +39,20 @@
 
 #define MULLE_UTF_VERSION  ((1 << 20) | (1 << 8) | 13)
 
-#include "mulle_utf_type.h"
+#include "mulle-utf-type.h"
 
-#include "mulle_char5.h"
-#include "mulle_char7.h"
-#include "mulle_utf8.h"
-#include "mulle_utf16.h"
-#include "mulle_utf32.h"
-#include "mulle_utf16_string.h"
-#include "mulle_utf32_string.h"
+#include "mulle-char5.h"
+#include "mulle-char7.h"
+#include "mulle-utf8.h"
+#include "mulle-utf16.h"
+#include "mulle-utf32.h"
+#include "mulle-utf16-string.h"
+#include "mulle-utf32-string.h"
 
-#include "mulle_utf_convenience.h"
-#include "mulle_utf_ctype.h"
-#include "mulle_utf_tolower.h"
-#include "mulle_utf_toupper.h"
+#include "mulle-utf-convenience.h"
+#include "mulle-utf-ctype.h"
+#include "mulle-utf-tolower.h"
+#include "mulle-utf-toupper.h"
 
 
 #endif /* mulle_utf_h */

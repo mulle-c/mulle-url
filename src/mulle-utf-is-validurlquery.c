@@ -8,7 +8,7 @@
 //  All rights reserved.
 //
 
-#include "mulle_utf_is_validurlquery.h"
+#include "mulle-utf-is-validurlquery.h"
 
 
 int   mulle_utf16_is_validurlquery( mulle_utf16_t c)

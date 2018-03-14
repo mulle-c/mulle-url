@@ -8,9 +8,9 @@
 //  All rights reserved.
 //
 
-#include "mulle_utf_is_nonpercentescape.h"
+#include "mulle-utf-is-nonpercentescape.h"
 
-#include "mulle_utf_is_validurluser.h"
+#include "mulle-utf-is-validurluser.h"
 
 
 int   mulle_utf16_is_nonpercentescape( mulle_utf16_t c)
