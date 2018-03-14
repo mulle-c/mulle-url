@@ -1,5 +1,5 @@
 //
-//  mulle_utf_is_validurluser.h
+//  mulle_utf_is_validurlhost.h
 //  mulle-utf
 //
 //  Created by Nat! on 2016-05-16 16:34:06 +0200.
@@ -8,10 +8,10 @@
 //  All rights reserved.
 //
 
-#include "mulle_utf_is_validurluser.h"
+#include "mulle-utf-is-validurlhost.h"
 
 
-int   mulle_utf16_is_validurluser( mulle_utf16_t c)
+int   mulle_utf16_is_validurlhost( mulle_utf16_t c)
 {
    if( c < 0x0021)
       return( 0);
@@ -25,14 +25,11 @@ int   mulle_utf16_is_validurluser( mulle_utf16_t c)
    case 0x0023 :
    case 0x0025 :
    case 0x002f :
-   case 0x003a :
    case 0x003c :
    case 0x003e :
    case 0x003f :
    case 0x0040 :
-   case 0x005b :
    case 0x005c :
-   case 0x005d :
    case 0x005e :
    case 0x0060 :
    case 0x007b :
@@ -45,16 +42,16 @@ int   mulle_utf16_is_validurluser( mulle_utf16_t c)
 }
 
 
-int   mulle_utf32_is_validurluser( mulle_utf32_t c)
+int   mulle_utf32_is_validurlhost( mulle_utf32_t c)
 {
    if( c <= 0xFFFF)
-      return( mulle_utf16_is_validurluser( (mulle_utf16_t) c));
+      return( mulle_utf16_is_validurlhost( (mulle_utf16_t) c));
 
    return( 0);
 }
 
 
-int   mulle_utf_is_validurluserplane( unsigned int plane)
+int   mulle_utf_is_validurlhostplane( unsigned int plane)
 {
    switch( plane)
    {
