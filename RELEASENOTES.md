@@ -1,15 +1,20 @@
+## 2.3.0
+
+* split off from mulle-utf
+
+
 ## 2.2.0
 
-* added ``mulle_utf8_strnstr`,` ``mulle_utf8_strnchr`,` ``mulle_utf8_strnspn`,` ``mulle_utf8_strncspn``
+* added ``mulle_url8_strnstr`,` ``mulle_url8_strnchr`,` ``mulle_url8_strnspn`,` ``mulle_url8_strncspn``
 * add rover functionality to step through UTF strings
 * added a longlong ascii conversion
 
 
 ## 2.1.0
 
-* added `mulle_utf…_nop` functions for nop callbacks
-* added `_mulle_utf32_as_utf8` for quick conversions w/o error checks
-* struct `mulle_utf8_data` added
+* added `mulle_url…_nop` functions for nop callbacks
+* added `_mulle_url32_as_utf8` for quick conversions w/o error checks
+* struct `mulle_url8_data` added
 * updated to Unicode 12.1
 * added legal characterset, though its pretty large
 * fixed a lot of bugs with respect to charactersets
@@ -70,7 +75,7 @@
 ### 1.1.13
 
 * migrate to mulle-project
-* fix glaring regression in mulle_utf8_information
+* fix glaring regression in mulle_url8_information
 
 ### 1.1.11
 
@@ -143,14 +148,14 @@ better. Need to update the compiler too.
 * incorporated some code from `mulle_regex`, namely those `_string` functions.
 * add dependency to `mulle_allocator` for convenience methods
 * changed parameter order in bytebuffer conversion functions!
-* allow len to be passed as -1 to `mulle_utf<>_information` for convenience.
+* allow len to be passed as -1 to `mulle_url<>_information` for convenience.
 
 
 0.4
 ===
 
-* Unify all utf8/16/32_info structs into one `mulle_utf_information`.
-* added mulle_utf_is_validurlscheme.h
+* Unify all utf8/16/32_info structs into one `mulle_url_information`.
+* added mulle_unicode_is_validurlscheme.h
 
 
 0.3
@@ -178,4 +183,4 @@ better. Need to update the compiler too.
   because by default the utf routines will use host order. If you want
   to have flipped output just change the `add`routine.
 
-* renamed mulle_utf8char_t and friends to mulle_utf8_t
+* renamed mulle_url8char_t and friends to mulle_url8_t

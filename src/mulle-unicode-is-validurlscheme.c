@@ -1,6 +1,6 @@
 //
-//  mulle_utf_is_validurlscheme.c
-//  mulle-utf
+//  mulle_unicode_is_validurlscheme.c
+//  mulle-url
 //
 //  Created by Nat! on 16.05.16.
 //  Copyright © 2016 Mulle kybernetiK.
@@ -8,10 +8,10 @@
 //  All rights reserved.
 //
 
-#include "mulle-utf-is-validurlscheme.h"
+#include "mulle-unicode-is-validurlscheme.h"
 
 
-int   mulle_utf16_is_validurlscheme( mulle_utf16_t c)
+int   mulle_unicode16_is_validurlscheme( uint16_t c)
 {
    // scheme      = ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
 
@@ -44,16 +44,16 @@ int   mulle_utf16_is_validurlscheme( mulle_utf16_t c)
 }
 
 
-int   mulle_utf32_is_validurlscheme( mulle_utf32_t c)
+int   mulle_unicode_is_validurlscheme( int32_t c)
 {
    if( c <= 0xFFFF)
-      return( mulle_utf16_is_validurlscheme( (mulle_utf16_t) c));
+      return( mulle_unicode16_is_validurlscheme( (uint16_t) c));
 
    return( 0);
 }
 
 
-int   mulle_utf_is_validurlschemeplane( unsigned int plane)
+int   mulle_unicode_is_validurlschemeplane( unsigned int plane)
 {
    switch( plane)
    {
