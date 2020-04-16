@@ -1,6 +1,6 @@
 //
-//  mulle_utf_is_validurluser.h
-//  mulle-utf
+//  mulle_unicode_is_validurlpassword.h
+//  mulle-url
 //
 //  Created by Nat! on 2016-05-16 16:34:06 +0200.
 //  Copyright © 2016 Mulle kybernetiK.
@@ -8,10 +8,10 @@
 //  All rights reserved.
 //
 
-#include "mulle-utf-is-validurluser.h"
+#include "mulle-unicode-is-validurlpassword.h"
 
 
-int   mulle_utf16_is_validurluser( mulle_utf16_t c)
+int   mulle_unicode16_is_validurlpassword( uint16_t c)
 {
    if( c < 0x0021)
       return( 0);
@@ -45,16 +45,16 @@ int   mulle_utf16_is_validurluser( mulle_utf16_t c)
 }
 
 
-int   mulle_utf32_is_validurluser( mulle_utf32_t c)
+int   mulle_unicode_is_validurlpassword( int32_t c)
 {
    if( c <= 0xFFFF)
-      return( mulle_utf16_is_validurluser( (mulle_utf16_t) c));
+      return( mulle_unicode16_is_validurlpassword( (uint16_t) c));
 
    return( 0);
 }
 
 
-int   mulle_utf_is_validurluserplane( unsigned int plane)
+int   mulle_unicode_is_validurlpasswordplane( unsigned int plane)
 {
    switch( plane)
    {

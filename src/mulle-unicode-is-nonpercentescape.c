@@ -1,6 +1,6 @@
 //
-//  mulle_utf_isnonpercentescape.c
-//  mulle-utf
+//  mulle_unicode_isnonpercentescape.c
+//  mulle-unicode
 //
 //  Created by Nat! on 24.04.16.
 //  Copyright © 2016 Mulle kybernetiK.
@@ -8,12 +8,10 @@
 //  All rights reserved.
 //
 
-#include "mulle-utf-is-nonpercentescape.h"
-
-#include "mulle-utf-is-validurluser.h"
+#include "mulle-unicode-is-nonpercentescape.h"
 
 
-int   mulle_utf16_is_nonpercentescape( mulle_utf16_t c)
+int   mulle_unicode16_is_nonpercentescape( uint16_t c)
 {
    if( c >= 'A' && c <= 'Z')
       return( 1);
@@ -35,15 +33,15 @@ int   mulle_utf16_is_nonpercentescape( mulle_utf16_t c)
 }
 
 
-int   mulle_utf32_is_nonpercentescape( mulle_utf32_t c)
+int   mulle_unicode_is_nonpercentescape( int32_t c)
 {
    if( c <= 0xFFFF)
-      return( mulle_utf16_is_validurluser( (mulle_utf16_t) c));
+      return( mulle_unicode16_is_nonpercentescape( (uint16_t) c));
    return( 0);
 }
 
 
-int   mulle_utf_is_nonpercentescapeplane( unsigned int plane)
+int   mulle_unicode_is_nonpercentescapeplane( unsigned int plane)
 {
    switch( plane)
    {

@@ -1,6 +1,6 @@
 //
-//  mulle-utf.h
-//  mulle-utf
+//  mulle-url.h
+//  mulle-url
 //
 //  Created by Nat! on 18.03.16.
 //  Copyright © 2016 Mulle kybernetiK.
@@ -34,30 +34,23 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 //
-#ifndef mulle_utf_h__
-#define mulle_utf_h__
+#ifndef mulle_url_h__
+#define mulle_url_h__
 
-#define MULLE_UTF_VERSION  ((2 << 20) | (2 << 8) | 0)
+#define MULLE_URL_VERSION  ((2 << 20) | (3 << 8) | 0)
 
 #include "include.h"
 
-#include "mulle-utf-type.h"
-
-#include "mulle-char5.h"
-#include "mulle-char7.h"
-#include "mulle-utf8.h"
-#include "mulle-utf16.h"
-#include "mulle-utf32.h"
-#include "mulle-utf16-string.h"
-#include "mulle-utf32-string.h"
-
-#include "mulle-utf-convenience.h"
-#include "mulle-utf-ctype.h"
-#include "mulle-utf-tolower.h"
-#include "mulle-utf-toupper.h"
-
-#include "mulle-utf-rover.h"
-#include "mulle-utf-scan.h"
+#include <stdint.h>
 
 
-#endif /* mulle_utf_h */
+#include "mulle-unicode-is-nonpercentescape.h"
+#include "mulle-unicode-is-validurlfragment.h"
+#include "mulle-unicode-is-validurlhost.h"
+#include "mulle-unicode-is-validurlpassword.h"
+#include "mulle-unicode-is-validurlpath.h"
+#include "mulle-unicode-is-validurlquery.h"
+#include "mulle-unicode-is-validurlscheme.h"
+#include "mulle-unicode-is-validurluser.h"
+
+#endif /* mulle_url_h */
