@@ -1,6 +1,6 @@
 # mulle-url
 
-🈷️ Support for URL parsing
+#### 🈷️ Support for URL parsing
 
 A C (C99) library to check if unicode characters are valid for the various
 parts of an URL: scheme, host, user etc.
@@ -58,9 +58,8 @@ mkdir build 2> /dev/null
 
 ## Platforms and Compilers
 
-All platforms and compilers supported by
-[mulle-c11](//github.com/mulle-c/mulle-c11) and
-[mulle-thread](//github.com/mulle-c/mulle-thread).
+If your platform has the `<stdint.h>` header (C99) you should be fine.
+
 
 
 ## Author
