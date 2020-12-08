@@ -9,9 +9,9 @@ parts of an URL: scheme, host, user etc.
 Used by **NSCharacterSet** extensions of MulleObjCInetFoundation.
 
 
-Build Status | Release Version
--------------|-----------------------------------
-[![Build Status](https://travis-ci.org/mulle-c/mulle-url.svg?branch=release)](https://travis-ci.org/mulle-c/mulle-url) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-c/mulle-url.svg) [![Build Status](https://travis-ci.org/mulle-c/mulle-url.svg?branch=release)](https://travis-ci.org/mulle-c/mulle-url)
+| Release Version
+|-----------------------------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-c/mulle-url.svg?branch=release) [![Build Status](https://github.com/mulle-c/mulle-url/workflows/CI/badge.svg?branch=release)](https://github.com/mulle-c/mulle-url/actions)
 
 
 
@@ -24,11 +24,19 @@ File                                    | Description
 
 ## Add
 
-Use [mulle-sde](//github.com/mulle-sde) to add mulle-url to your project:
+### Either: link library
+
+Use [mulle-sde](//github.com/mulle-sde) to add mulle-buffer to your project:
 
 ```
-mulle-sde dependency add --c --github mulle-c mulle-url
+mulle-sde dependency add --c --github mulle-c mulle-buffer
 ```
+
+### Or: add Sources
+
+Alternatively you can read [STEAL.md](//github.com/mulle-c11/dox/STEAL.md) on
+how to add mulle-c source code into your own projects.
+
 
 ## Install
 
