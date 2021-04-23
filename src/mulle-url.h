@@ -37,20 +37,12 @@
 #ifndef mulle_url_h__
 #define mulle_url_h__
 
-#define MULLE_URL_VERSION  ((2 << 20) | (3 << 8) | 1)
+#define MULLE_URL_VERSION  ((2 << 20) | (3 << 8) | 2)
 
 #include "include.h"
 
 #include <stdint.h>
 
-
-#include "mulle-unicode-is-nonpercentescape.h"
-#include "mulle-unicode-is-validurlfragment.h"
-#include "mulle-unicode-is-validurlhost.h"
-#include "mulle-unicode-is-validurlpassword.h"
-#include "mulle-unicode-is-validurlpath.h"
-#include "mulle-unicode-is-validurlquery.h"
-#include "mulle-unicode-is-validurlscheme.h"
-#include "mulle-unicode-is-validurluser.h"
+#include "_mulle-url-provide.h"
 
 #endif /* mulle_url_h */
