@@ -1,4 +1,3 @@
-# Fill it with mulle-env envirionment --scope  set <key> <value>
 #
 # mulle-testallocator nodetype: ${MULLE_TESTALLOCATOR_NODETYPE:-tar}
 #
@@ -144,20 +143,20 @@ export MULLE_ATEXIT_BRANCH="prerelease"
 
 
 #
-# mulle-utf nodetype: ${MULLE_UTF_NODETYPE:-tar}
+# mulle-url nodetype: ${MULLE_URL_NODETYPE:-tar}
 #
-export MULLE_UTF_NODETYPE="git"
+export MULLE_URL_NODETYPE="git"
 
 
 #
-# mulle-utf url: ${MULLE_UTF_URL:-https://github.com/mulle-c/mulle-utf/archive/${MULLE_TAG}.tar.gz}
+# mulle-url url: ${MULLE_URL_URL:-https://github.com/mulle-c/mulle-url/archive/${MULLE_TAG}.tar.gz}
 #
-export MULLE_UTF_URL="https://github.com/mulle-c/mulle-utf.git"
+export MULLE_URL_URL="https://github.com/mulle-c/mulle-url.git"
 
 
 #
-# mulle-utf branch: ${MULLE_UTF_BRANCH}
+# mulle-url branch: ${MULLE_URL_BRANCH}
 #
-export MULLE_UTF_BRANCH="prerelease"
+export MULLE_URL_BRANCH="prerelease"
 
 
