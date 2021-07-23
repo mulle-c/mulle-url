@@ -1,3 +1,7 @@
+### 2.3.2
+
+* Various small improvements
+
 ## 2.3.0
 
 * split off from mulle-utf
