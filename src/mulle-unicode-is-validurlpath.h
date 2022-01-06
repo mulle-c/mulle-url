@@ -11,10 +11,14 @@
 #ifndef mulle_unicode_is_validurlpath_h__
 #define mulle_unicode_is_validurlpath_h__
 
+#include "include.h"
 #include <stdint.h>
 
+MULLE_URL_EXTERN_GLOBAL
 int   mulle_unicode16_is_validurlpath( uint16_t c);
+MULLE_URL_EXTERN_GLOBAL
 int   mulle_unicode_is_validurlpath( int32_t c);
+MULLE_URL_EXTERN_GLOBAL
 int   mulle_unicode_is_validurlpathplane( unsigned int plane);
 
 #endif /* mulle_unicode_is_validurlpath_h */

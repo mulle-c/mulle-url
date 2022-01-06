@@ -37,12 +37,20 @@
 #ifndef mulle_url_h__
 #define mulle_url_h__
 
-#define MULLE_URL_VERSION  ((2 << 20) | (3 << 8) | 2)
+#define MULLE_URL_VERSION  ((2 << 20) | (3 << 8) | 3)
 
 #include "include.h"
 
 #include <stdint.h>
 
 #include "_mulle-url-provide.h"
+
+
+#ifdef __has_include
+# if __has_include( "_mulle-url-versioncheck.h")
+#  include "_mulle-url-versioncheck.h"
+# endif
+#endif
+
 
 #endif /* mulle_url_h */
