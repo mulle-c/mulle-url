@@ -2,6 +2,9 @@ cmake_minimum_required( VERSION 3.1)
 
 project( mulle-url C)
 
+add_definitions( -DMULLE_URL_EXTERN_GLOBAL=extern)
+
+
 
 ### mulle-sde environment
 

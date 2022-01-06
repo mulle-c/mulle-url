@@ -11,10 +11,14 @@
 #ifndef mulle_url_isnonpercentescape_h__
 #define mulle_url_isnonpercentescape_h__
 
+#include "include.h"
 #include <stdint.h>
 
+MULLE_URL_EXTERN_GLOBAL
 int   mulle_unicode16_is_nonpercentescape( uint16_t c);
+MULLE_URL_EXTERN_GLOBAL
 int   mulle_unicode_is_nonpercentescape( int32_t c);
+MULLE_URL_EXTERN_GLOBAL
 int   mulle_unicode_is_nonpercentescapeplane( unsigned int plane);
 
 

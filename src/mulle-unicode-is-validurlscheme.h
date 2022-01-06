@@ -11,10 +11,14 @@
 #ifndef mulle_unicode_is_validurlscheme_h__
 #define mulle_unicode_is_validurlscheme_h__
 
+#include "include.h"
 #include <stdint.h>
 
+MULLE_URL_EXTERN_GLOBAL
 int   mulle_unicode16_is_validurlscheme( uint16_t c);
+MULLE_URL_EXTERN_GLOBAL
 int   mulle_unicode_is_validurlscheme( int32_t c);
+MULLE_URL_EXTERN_GLOBAL
 int   mulle_unicode_is_validurlschemeplane( unsigned int plane);
 
 #endif /* mulle_url8_is_validurlscheme_h */
