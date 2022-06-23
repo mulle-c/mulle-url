@@ -37,7 +37,7 @@
 #ifndef mulle_url_h__
 #define mulle_url_h__
 
-#define MULLE_URL_VERSION  ((2 << 20) | (3 << 8) | 3)
+#define MULLE_URL_VERSION  ((2 << 20) | (3 << 8) | 4)
 
 #include "include.h"
 

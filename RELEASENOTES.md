@@ -1,3 +1,7 @@
+### 2.3.4
+
+* fix GLOBAL for Windows
+
 ### 2.3.3
 
 * Various small improvements
