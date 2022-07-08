@@ -11,7 +11,7 @@ Used by **NSCharacterSet** extensions of MulleObjCInetFoundation.
 
 | Release Version
 |-----------------------------------
-| ![Mulle kybernetiK tag](//img.shields.io/github/tag/mulle-c/mulle-url.svg?branch=release) [![Build Status](//github.com/mulle-c/mulle-url/workflows/CI/badge.svg?branch=release)](//github.com/mulle-c/mulle-url/actions)
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-c/mulle-url.svg?branch=release) [![Build Status](https://github.com/mulle-c/mulle-url/workflows/CI/badge.svg?branch=release)](//github.com/mulle-c/mulle-url/actions)
 
 
 
