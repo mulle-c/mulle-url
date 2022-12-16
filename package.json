@@ -1,6 +1,6 @@
 {
    "name" : "mulle-url",
-   "version" : "2.3.0",
+   "version" : "2.3.5",
    "description" : "🈷️ Support for URL parsing",
    "homepage" : "https://github.com/mulle-c/mulle-url",
    "bugs" : "https://github.com/mulle-c/mulle-url/issues",
@@ -11,5 +11,6 @@
       "url" : "mulle-c/mulle-url"
    },
    "dependencies" : {
+      "mulle-c11" : "git://github.com/mulle-c/mulle-c11"
    }
 }
