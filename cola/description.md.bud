@@ -1,0 +1,3 @@
+A C (C99) library to check if unicode characters are valid for the various
+parts of an URL: scheme, host, user etc.
+Used by **NSCharacterSet** extensions of MulleObjCInetFoundation.
