@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 3.15)
+cmake_minimum_required( VERSION 3.14)
 
 project( mulle-url C)
 
@@ -20,8 +20,8 @@ include( Files)
 
 if( HEADERS_PHASE)
    install( FILES ${INSTALL_PUBLIC_HEADERS}  DESTINATION "include/mulle-url")
-   install( FILES ${INSTALL_PRIVATE_HEADERS} DESTINATION "include/mulle-url/private")
-   install( FILES ${CMAKE_INCLUDES}          DESTINATION "include/mulle-url/cmake")
+   install( FILES ${INSTALL_PRIVATE_HEADERS} DESTINATION "include/mulle-url")
+   install( FILES ${INSTALL_CMAKE_INCLUDES}          DESTINATION "include/mulle-url/cmake")
 
    # short cut out
    if( NOT COMPILE_PHASE AND NOT LINK_PHASE)

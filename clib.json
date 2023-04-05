@@ -1,0 +1,36 @@
+{
+   "name" : "mulle-url",
+   "version" : "2.3.5",
+   "description" : "Support for URL parsing",
+   "keywords" : [],
+   "license" : "BSD-3-Clause",
+   "repo" : "mulle-c/mulle-url",
+   "src" : [
+      "src/generic/include-private.h",
+      "src/generic/include.h",
+      "src/mulle-unicode-is-nonpercentescape.c",
+      "src/mulle-unicode-is-nonpercentescape.h",
+      "src/mulle-unicode-is-validurlfragment.c",
+      "src/mulle-unicode-is-validurlfragment.h",
+      "src/mulle-unicode-is-validurlhost.c",
+      "src/mulle-unicode-is-validurlhost.h",
+      "src/mulle-unicode-is-validurlpassword.c",
+      "src/mulle-unicode-is-validurlpassword.h",
+      "src/mulle-unicode-is-validurlpath.c",
+      "src/mulle-unicode-is-validurlpath.h",
+      "src/mulle-unicode-is-validurlquery.c",
+      "src/mulle-unicode-is-validurlquery.h",
+      "src/mulle-unicode-is-validurlscheme.c",
+      "src/mulle-unicode-is-validurlscheme.h",
+      "src/mulle-unicode-is-validurluser.c",
+      "src/mulle-unicode-is-validurluser.h",
+      "src/mulle-url.h",
+      "src/reflect/_mulle-url-include-private.h",
+      "src/reflect/_mulle-url-include.h",
+      "src/reflect/_mulle-url-provide.h",
+      "src/reflect/_mulle-url-versioncheck.h"
+   ],
+   "dependencies" : {
+      "mulle-c/mulle-c11": "*"
+   }
+}
