@@ -6,6 +6,7 @@ A C (C99) library to check if unicode characters are valid for the various
 parts of an URL: scheme, host, user etc.
 Used by **NSCharacterSet** extensions of MulleObjCInetFoundation.
 
+
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
 | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-c/mulle-url.svg?branch=release) [![Build Status](https://github.com/mulle-c/mulle-url/workflows/CI/badge.svg?branch=release)](//github.com/mulle-c/mulle-url/actions)| [RELEASENOTES](RELEASENOTES.md) |
@@ -24,6 +25,13 @@ Used by **NSCharacterSet** extensions of MulleObjCInetFoundation.
 
 
 ## Add
+
+**This project is a component of the [mulle-core](//github.com/mulle-core/mulle-core) library. As such you usually will *not* add or install it
+individually, unless you specifically do not want to link against
+`mulle-core`.**
+
+
+### Add as an individual component
 
 Use [mulle-sde](//github.com/mulle-sde) to add mulle-url to your project:
 
