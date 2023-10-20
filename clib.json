@@ -1,7 +1,7 @@
 {
    "name" : "mulle-url",
-   "version" : "2.3.6",
-   "description" : "Support for URL parsing",
+   "version" : "2.3.7",
+   "description" : "🈷️ Support for URL parsing",
    "keywords" : [],
    "license" : "BSD-3-Clause",
    "repo" : "mulle-c/mulle-url",
