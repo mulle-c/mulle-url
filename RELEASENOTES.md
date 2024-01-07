@@ -1,3 +1,7 @@
+### 2.3.7
+
+* Various small improvements
+
 ### 2.3.6
 
 * remove package.json as it conflicts with clib.json
