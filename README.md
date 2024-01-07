@@ -7,9 +7,10 @@ parts of an URL: scheme, host, user etc.
 Used by **NSCharacterSet** extensions of MulleObjCInetFoundation.
 
 
+
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-c/mulle-url.svg?branch=release) [![Build Status](https://github.com/mulle-c/mulle-url/workflows/CI/badge.svg?branch=release)](//github.com/mulle-c/mulle-url/actions)| [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-c/mulle-url.svg?branch=release) [![Build Status](https://github.com/mulle-c/mulle-url/workflows/CI/badge.svg?branch=release)](//github.com/mulle-c/mulle-url/actions) | [RELEASENOTES](RELEASENOTES.md) |
 
 
 
@@ -85,7 +86,7 @@ cmake --install build --config Release
 
 ## Author
 
-[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK
+[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK  
 
 
 
