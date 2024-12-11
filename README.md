@@ -10,7 +10,7 @@ Used by **NSCharacterSet** extensions of MulleObjCInetFoundation.
 
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-c/mulle-url.svg?branch=master) [![Build Status](https://github.com/mulle-c/mulle-url/workflows/CI/badge.svg?branch=master)](//github.com/mulle-c/mulle-url/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-c/mulle-url.svg) [![Build Status](https://github.com/mulle-c/mulle-url/workflows/CI/badge.svg)](//github.com/mulle-c/mulle-url/actions) | [RELEASENOTES](RELEASENOTES.md) |
 
 
 
