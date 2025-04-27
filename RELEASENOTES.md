@@ -1,3 +1,7 @@
+### 2.3.10
+
+Various small improvements
+
 ### 2.3.9
 
 Various small improvements
