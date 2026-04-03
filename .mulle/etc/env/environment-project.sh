@@ -52,3 +52,9 @@ export PROJECT_DOWNCASE_IDENTIFIER="mulle_url"
 export PROJECT_UPCASE_IDENTIFIER="MULLE_URL"
 
 
+#
+#
+#
+export PROJECT_ASSET_DIR="asset"
+
+
