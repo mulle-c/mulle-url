@@ -4,6 +4,7 @@
       description="🈷️ Support for URL parsing";
       domain="github";
       name="mulle-url";
+      version="2.3.12";
       user="mulle-c";
       repo="mulle-url";
       homepage="https://github.com/mulle-c/mulle-url";
