@@ -73,3 +73,5 @@ environment-user-*.sh
 .roam
 .graveyard
 *.tmp.*
+*.test.*
+.idea
