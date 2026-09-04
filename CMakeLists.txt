@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( mulle-url VERSION 2.3.13 LANGUAGES C)
+project( mulle-url VERSION 2.4.0 LANGUAGES C)
 
 
 
