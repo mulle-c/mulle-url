@@ -1,6 +1,6 @@
 {
    "name" : "mulle-url",
-   "version" : "2.4.0",
+   "version" : "2.4.1",
    "description" : "🈷️ Support for URL parsing",
    "keywords" : [],
    "license" : "BSD-3-Clause",
@@ -19,6 +19,10 @@
       "src/mulle-unicode-is-validurlpassword.h",
       "src/mulle-unicode-is-validurlpath.c",
       "src/mulle-unicode-is-validurlpath.h",
+      "src/mulle-unicode-is-validurlpercentescape.c",
+      "src/mulle-unicode-is-validurlpercentescape.h",
+      "src/mulle-unicode-is-validurlport.c",
+      "src/mulle-unicode-is-validurlport.h",
       "src/mulle-unicode-is-validurlquery.c",
       "src/mulle-unicode-is-validurlquery.h",
       "src/mulle-unicode-is-validurlscheme.c",

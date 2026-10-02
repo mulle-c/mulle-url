@@ -55,6 +55,8 @@ src/mulle-unicode-is-validurlfragment.h
 src/mulle-unicode-is-validurlhost.h
 src/mulle-unicode-is-validurlpassword.h
 src/mulle-unicode-is-validurlpath.h
+src/mulle-unicode-is-validurlpercentescape.h
+src/mulle-unicode-is-validurlport.h
 src/mulle-unicode-is-validurlquery.h
 src/mulle-unicode-is-validurlscheme.h
 src/mulle-unicode-is-validurluser.h

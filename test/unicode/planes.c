@@ -47,6 +47,7 @@ int  main()
    test( "validurlquery", mulle_unicode_is_validurlquery, mulle_unicode_is_validurlqueryplane);
    test( "validurlscheme", mulle_unicode_is_validurlscheme, mulle_unicode_is_validurlschemeplane);
    test( "validurluser", mulle_unicode_is_validurluser, mulle_unicode_is_validurluserplane);
+   test( "validurlport", mulle_unicode_is_validurlport, mulle_unicode_is_validurlportplane);
 
    return( 0);
 }

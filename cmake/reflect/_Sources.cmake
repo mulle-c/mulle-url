@@ -16,6 +16,8 @@ src/mulle-unicode-is-validurlfragment.c
 src/mulle-unicode-is-validurlhost.c
 src/mulle-unicode-is-validurlpassword.c
 src/mulle-unicode-is-validurlpath.c
+src/mulle-unicode-is-validurlpercentescape.c
+src/mulle-unicode-is-validurlport.c
 src/mulle-unicode-is-validurlquery.c
 src/mulle-unicode-is-validurlscheme.c
 src/mulle-unicode-is-validurluser.c

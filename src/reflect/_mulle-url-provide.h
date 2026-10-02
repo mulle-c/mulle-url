@@ -18,6 +18,8 @@
 #include "mulle-unicode-is-validurlhost.h"
 #include "mulle-unicode-is-validurlpassword.h"
 #include "mulle-unicode-is-validurlpath.h"
+#include "mulle-unicode-is-validurlpercentescape.h"
+#include "mulle-unicode-is-validurlport.h"
 #include "mulle-unicode-is-validurlquery.h"
 #include "mulle-unicode-is-validurlscheme.h"
 #include "mulle-unicode-is-validurluser.h"
