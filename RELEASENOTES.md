@@ -1,3 +1,12 @@
+### 2.4.1
+
+
+feature: add URL port and percent-escape validation APIs
+
+* new `mulle-unicode-is-validurlport.h`: ``mulle_unicode_is_validurlport`,` ``mulle_unicode16_is_validurlport`` and ``mulle_unicode_is_validurlportplane`` validate RFC 3986 `port = *DIGIT` per code point
+* new `mulle-unicode-is-validurlpercentescape.h`: ``mulle_unicode_is_validurlpercentescape_triplet`` and ``mulle_unicode_is_validurlpercentencoding`` verify well-formed `%XX` percent-encoding over a byte slice
+* `;` is now accepted by the path classifier as an RFC 3986 sub-delimiter, so matrix parameters such as `/path;p=1` validate
+
 ## 2.4.0
 
 
