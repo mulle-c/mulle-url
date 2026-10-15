@@ -1,6 +1,7 @@
 ### 2.4.1
 
 
+
 feature: add URL port and percent-escape validation APIs
 
 * new `mulle-unicode-is-validurlport.h`: ``mulle_unicode_is_validurlport`,` ``mulle_unicode16_is_validurlport`` and ``mulle_unicode_is_validurlportplane`` validate RFC 3986 `port = *DIGIT` per code point
