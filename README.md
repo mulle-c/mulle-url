@@ -10,7 +10,7 @@ Used by **NSCharacterSet** extensions of MulleObjCInetFoundation.
 
 | Release Version                                       | Release Notes  | AI Documentation
 |-------------------------------------------------------|----------------|---------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-c/mulle-url.svg) [![Build Status](https://github.com/mulle-c/mulle-url/workflows/CI/badge.svg)](//github.com/mulle-c/mulle-url/actions) | [RELEASENOTES](RELEASENOTES.md) | [DeepWiki for mulle-url](https://deepwiki.com/mulle-c/mulle-url)
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-c/mulle-url.svg) ![standard: C11](pix/c11.svg) ![apis: ansi](pix/apis-ansi.svg) ![memory: none](pix/memory-none.svg) ![threads: threadsafe](pix/thread-threadsafe.svg) [![Build Status](https://github.com/mulle-c/mulle-url/workflows/CI/badge.svg)](//github.com/mulle-c/mulle-url/actions) | [RELEASENOTES](RELEASENOTES.md) | [DeepWiki for mulle-url](https://deepwiki.com/mulle-c/mulle-url)
 
 
 
@@ -42,23 +42,23 @@ In your code include its umbrella header:
 #include <mulle-core/mulle-core.h>
 ```
 
-In your project add mulle-core as a git submodule and link against it:
-
-``` bash
-git submodule add -f "https://github.com/mulle-core/mulle-core.git" \
-                     "stash/mulle-core"
-git submodule update --init --recursive
-```
-
-then add these comands to your `CMakeLists.txt`:
+Add mulle-core to your `CMakeLists.txt` with
+[FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html):
 
 ``` cmake
-include_directories( SYSTEM "stash/mulle-core/src")
-add_subdirectory( stash/mulle-core)
+include( FetchContent)
+
+set( MULLE__CORE_TAG "master" CACHE STRING "branch or tag to fetch mulle-core from")
+
+FetchContent_Declare( MULLE__CORE
+   GIT_REPOSITORY https://github.com/mulle-core/mulle-core.git
+   GIT_TAG        "${MULLE__CORE_TAG}")
+FetchContent_MakeAvailable( MULLE__CORE)
+
 target_link_libraries( ${PROJECT_NAME} PUBLIC mulle-core)
 ```
 
-Or let [mulle-sde](//github.com/mulle-sde) do it:
+Or add to your mulle-sde project with:
 
 ``` sh
 mulle-sde add mulle-core/mulle-core
@@ -75,30 +75,32 @@ In your code include its header:
 #include <mulle-url/mulle-url.h>
 ```
 
-Add mulle-url and dependencies as git submodules and link against
-them:
-
-``` bash
-git submodule add -f --name "mulle-c11" \
-                            "https://github.com/mulle-c/mulle-c11.git" \
-                            "stash/mulle-c11"
-git submodule add -f --name "mulle-url" \
-                        "https://github.com/mulle-c/mulle-url" \
-                        "stash/mulle-url"
-git submodule update --init --recursive
-```
+Add mulle-url and its dependencies to your `CMakeLists.txt` with
+[FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html):
 
 ``` cmake
+include( FetchContent)
+
 include_directories( SYSTEM "${CMAKE_BINARY_DIR}/include")
 
-add_subdirectory( stash/mulle-c11)
-add_subdirectory( stash/mulle-url)
+set( MULLE__C11_TAG "master" CACHE STRING "branch or tag to fetch mulle-c11 from")
 
-target_link_libraries( ${PROJECT_NAME} PUBLIC mulle-c11)
+FetchContent_Declare( MULLE__C11
+   GIT_REPOSITORY https://github.com/mulle-c/mulle-c11.git
+   GIT_TAG        "${MULLE__C11_TAG}")
+FetchContent_MakeAvailable( MULLE__C11)
+
+set( MULLE__URL_TAG "master" CACHE STRING "branch or tag to fetch mulle-url from")
+
+FetchContent_Declare( MULLE__URL
+   GIT_REPOSITORY https://github.com/mulle-c/mulle-url.git
+   GIT_TAG        "${MULLE__URL_TAG}")
+FetchContent_MakeAvailable( MULLE__URL)
+
 target_link_libraries( ${PROJECT_NAME} PUBLIC mulle-url)
 ```
 
-Or let [mulle-sde](//github.com/mulle-sde) do it:
+Or add to your mulle-sde project with:
 
 ``` sh
 mulle-sde add github:mulle-c/mulle-url

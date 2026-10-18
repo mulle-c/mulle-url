@@ -3,8 +3,9 @@
    {
       description="🈷️ Support for URL parsing";
       domain="github";
+      language="c";
+      dialect="c";
       name="mulle-url";
-      version="2.4.1";
       user="mulle-c";
       repo="mulle-url";
       homepage="https://github.com/mulle-c/mulle-url";
