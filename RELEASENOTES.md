@@ -2,6 +2,17 @@
 
 
 
+* README now shows how to consume mulle-core and mulle-url via CMake FetchContent instead of git submodules, with a branch/tag variable per dependency
+* README advertises the library's build characteristics: standard C11, strict ANSI/ISO APIs (no platform feature macros), no internal allocation, and thread safety
+* new pix badges and cola metadata back up those claims (std C11, apis ansi, memory none, threads threadsafe)
+
+
+
+
+
+
+
+
 feature: add URL port and percent-escape validation APIs
 
 * new `mulle-unicode-is-validurlport.h`: ``mulle_unicode_is_validurlport`,` ``mulle_unicode16_is_validurlport`` and ``mulle_unicode_is_validurlportplane`` validate RFC 3986 `port = *DIGIT` per code point
